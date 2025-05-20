@@ -561,7 +561,7 @@ namespace WpfApp2
                                 writer.WriteLine("(S1:" + Spind1 + " S2:" + Spind2 + " S3:" + Spind3 + " S4:" + Spind4 + ")");
                                 // VB: For h = 1 To Int(LastL) + 1
                                 // C#: Loop runs from 1 up to and including floor(LastL) + 1
-                                for (h = 1; h <= (int)Math.Floor(LastL) + 1; h++) //bis zur letzten bohren mit allen möglichen
+                                for (h = 1; h <= (int)Math.Floor(LastL); h++) //bis zur letzten bohren mit allen möglichen
                                 {
                                     xPos = 240 + xErste + (h - 1) * lab; // Note the added 240 offset here
                                     aPos = aNull;
