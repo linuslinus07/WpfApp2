@@ -586,8 +586,11 @@ namespace WpfApp2
                                 }
                                 else if (Math.Floor(Netto) == 6) // VB: Int(Netto)
                                 {
-                                    writer.WriteLine("m104");
-                                    Spind4 = false; // Corrected typo from original VB comment analysis (assuming it meant Spind4 = False)
+                                    if (Spind4 == false)
+                                    {
+                                        writer.WriteLine("m104");
+                                        Spind4 = false; // Corrected typo from original VB comment analysis (assuming it meant Spind4 = False)
+                                    }
                                 }
                                 writer.WriteLine("(Rest nach spindelrückzug)");
                                 xPos = Currentx;
